@@ -16,70 +16,45 @@
 
 <html>
   <head>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
     <style>
+      @font-face {
+        font-family: "Fipps";
+        src: url("Fipps-Regular.otf") format("opentype");
+      }
       body {
         background-color: black;
-        margin: 0;
-        padding: 0;
-        display: flex;
-        flex-direction: column;
-        min-height: 100vh;
+        text-align: center;
       }
-        
-      .center {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        height: calc(100vh - 50px);
-        max-height: 400px;
+      .logo {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
       }
-
-       img {
-        width: 100%;
-        max-width: 400px;
-        max-height: 100%;
-        cursor: pointer;
+      h1 {
+        font-family: "Fipps", sans-serif;
+        color: white;
+        position: relative;
+        top: 60px;
       }
-      .second {
-        margin-top: 200px;
-      }
-      .second img {
-        max-width: 70px;
-        cursor: pointer;
-        width: 100%;
-        object-fit: contain;
-      }
-      .footer {
+      footer {
+        color: white;
         position: absolute;
         bottom: 0;
         width: 100%;
         text-align: center;
-        color: white;
-        font-size: 14px;
-      }
-
-      /* Media queries */
-      @media only screen and (max-width: 767px) {
-        .center {
-          height: 30%;
-        }
-        img {
-          max-width: 200px;
-        }
-        .second img {
-          max-width: 35px;
-        }
       }
     </style>
   </head>
   <body>
-    <div class="center">
-      <img src="logo.png" alt="Image">
-      <a class="second" href="https://discord.com/invite/YcCdBmHwyC">
-        <img src="discord.png" alt="Link to website">
-      </a>
-    </div>
-    <div class="footer">&copy; 2023 Nightoday Game Studio</div>
+    <img class="logo" src="logo.png" alt="Logo">
+    <br>
+    <h1>Nightoday Game Studio</h1>
+    <a href="https://discord.com/invite/YcCdBmHwyC"">
+      <img src="discord.png" alt="Second Image">
+    </a>
+    <footer>&copy; 2023 Nightoday Game Studio</footer>
   </body>
 </html>
+
