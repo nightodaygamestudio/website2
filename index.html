@@ -24,37 +24,39 @@
       }
       body {
         background-color: black;
-        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
       }
       .logo {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
+        width: 50%;
+        max-width: 200px;
+        margin-bottom: 20px;
       }
       h1 {
         font-family: "Fipps", sans-serif;
         color: white;
-        position: relative;
-        top: 60px;
+        margin-bottom: 20px;
+      }
+      a {
+        width: 50%;
+        max-width: 200px;
+        margin-bottom: 20px;
       }
       footer {
         color: white;
-        position: absolute;
-        bottom: 0;
-        width: 100%;
+        margin-top: 20px;
         text-align: center;
       }
     </style>
   </head>
   <body>
     <img class="logo" src="logo.png" alt="Logo">
-    <br>
     <h1>Nightoday Game Studio</h1>
-    <a href="https://discord.com/invite/YcCdBmHwyC"">
-      <img src="discord.png" alt="Second Image">
+    <a href="https://discord.com/invite/YcCdBmHwyC">
+      <img src="discord.png" alt="Discord">
     </a>
     <footer>&copy; 2023 Nightoday Game Studio</footer>
   </body>
 </html>
-
