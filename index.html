@@ -29,6 +29,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        flex-direction: column;
         height: 50%;
       }
       img {
@@ -38,6 +39,11 @@
       }
       .second {
         margin-top: 200px;
+      }
+      .second img {
+        max-width: 70px;
+        cursor: pointer;
+        width: 100%;
       }
       .footer {
         position: absolute;
@@ -52,6 +58,9 @@
       @media only screen and (max-width: 767px) {
         img {
           max-width: 200px;
+        }
+        .second img {
+          max-width: 35px;
         }
       }
     </style>
