@@ -28,33 +28,32 @@
         text-align: center;
         height: 100%;
         margin: 0;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
       }
       .logo {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
         max-width: 512px;
         max-height: 512px;
         margin-bottom: 100px;
       }
-      h1 {
+      h1, h2 {
         font-family: "Fipps", sans-serif;
         color: white;
+        position: relative;
+        top: 60px;
         display: inline-block;
         text-align: center;
         font-size: 100px;
+        height: 100px;
+        overflow: hidden;
         margin-bottom: 20px;
-      }
-      h2 {
-        font-family: "Fipps", sans-serif;
-        color: white;
-        display: inline-block;
-        text-align: center;
-        font-size: 100px;
-        margin-bottom: 100px;
       }
       .discord-image {
         max-width: 73px;
+        display: inline-block;
+        margin-top: 20px;
       }
       footer {
         color: white;
