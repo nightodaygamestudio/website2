@@ -1,0 +1,30 @@
+ .u-section-1 {
+  background-image: none;
+  min-height: 100vh;
+}
+
+.u-section-1 .u-text-1 {
+  font-size: 6rem;
+  text-shadow: 0px 0px 40px rgba(241,197,14,1);
+  font-weight: 700;
+  margin: 636px auto 0;
+}
+
+.u-section-1 .u-text-2 {
+  margin: 611px auto 0;
+}
+
+@media (max-width: 575px) {
+  .u-section-1 .u-text-1 {
+    font-size: 3.75rem;
+    width: auto;
+    margin-top: 656px;
+    margin-left: 39px;
+    margin-right: 39px;
+  }
+
+  .u-section-1 .u-text-2 {
+    margin-top: 592px;
+    margin-bottom: 14px;
+  }
+}
