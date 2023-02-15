@@ -17298,6 +17298,9 @@ p {
 .u-font-lobster.u-custom-font {
   font-family: Lobster, display !important;
 }
+.u-font-fipps.u-custom-font {
+  font-family: Fipps, display !important;  
+}
 .u-rectangle {
   border-radius: 0;
 }
