@@ -13,12 +13,27 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
+        /* CSS-Code für die Animation */
+        width: 100%;
+        white-space: nowrap;
+        overflow: hidden;
+        box-sizing: border-box;
+        animation: marquee 10s linear infinite;
+      }
+      /* CSS-Regel für die Animation */
+      @keyframes marquee {
+        0% {
+          transform: translateX(0%);
+        }
+        100% {
+          transform: translateX(-100%);
+        }
       }
     </style>
   </head>
   <body>
     <div id="coming-soon">
-      <h1>Coming Soon</h1>
+      <h1 class="marquee">Coming Soon</h1>
     </div>
   </body>
 </html>
