@@ -1,41 +1,43 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>
-        </marquee>Nightoday Game Studio</marquee>
-    </title>
+    <title>Nightoday Game Studio</title>
     <style>
       html, body {
         height: 100%;
         margin: 0;
         padding: 0;
       }
-      #site-title {
+      #title {
         position: absolute;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        /* CSS-Code für die Animation */
-        width: 100%;
-        white-space: nowrap;
-        overflow: hidden;
-        box-sizing: border-box;
-        animation: marquee 10s linear infinite;
-      }
-      /* CSS-Regel für die Animation */
-      @keyframes marquee {
-        0% {
-          transform: translateX(0%);
-        }
-        100% {
-          transform: translateX(-100%);
-        }
+        text-align: center;
+        font-size: 4em;
       }
     </style>
+    <script>
+      // Definiere den Text, der animiert werden soll
+      var title = "Coming Soon - Nightoday Game Studio";
+      var speed = 150; // Ändere die Geschwindigkeit der Animation
+
+      // Funktion, um den Text im Titel zu animieren
+      function animateTitle() {
+        title = title.substring(1) + title.charAt(0);
+        document.title = title;
+        setTimeout(animateTitle, speed);
+      }
+
+      // Starte die Animation, wenn das Dokument geladen ist
+      window.onload = function() {
+        animateTitle();
+      }
+    </script>
   </head>
   <body>
-    <div id="coming-soon">
-      <h1 class="marquee">Coming Soon</h1>
+    <div id="title">
+      Coming Soon
     </div>
   </body>
 </html>
